@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images.DO/hình\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 10px;
+}
+
+nav ul li a{
+    color: #080808;
+    text-decoration: #706e6e;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #361d1d;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transform: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 150px;
+    font-size: 60px;
+    color: #080808;
+}
+.header-text h1{
+    font-size: 70px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: aliceblue;
+}
+/*------about------*/
+#about{
+    padding: 30px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 35px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about-col-2 p{
+    font-size: 30px;
+    margin-top: 10px;
+    color: #a4a4a4;
+}
+
+.main-text{
+    margin-top: 20px;
+    font-size: 50px;
+
+}
+.skill-main{
+    width: 170%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+    margin-top: 30px;
+}
+.skill-bar{
+    margin-bottom: 2.3rem;
+}
+.skill-main h3{
+    margin-bottom: 1rem;
+    font-size: 30px;
+    text-align: right;
+}
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+    font-size: 20px;
+}
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(7, 181, 172);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+.skill-bar .bar span{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #fd4343;
+    border-radius: 25px;
+    box-shadow: #ff004f;
+}
+.skill-bar .bar .Photoshop{
+    width: 70%;
+    animation: Photoshop 3s;
+}
+.skill-bar .bar .Illustrator{
+    width: 70%;
+    animation: Illustrator 4s;
+}
+.skill-bar .bar .Indesign{
+    width: 80%;
+    animation: Indesign 5s;
+}
+.skill-bar .bar .Premiere{
+    Width: 65%;
+    animation: Premiere 2s;
+}
+.skill-bar .bar .After Effects{
+    Width: 60%;
+    animation: After Effects 2s;
+}
+/*------services------*/
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+/*--------contact--------*/
+#contact{
+    padding: 30px 0;
+}
+.contact-left{
+    flex-basis: 100%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left p i{
+    color: #115692;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icon{
+    margin-top: 30px;
+    
+}
+.social-icon a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #fff;
+    display: inline-block;
+}
+
+.social-icon a:hover{
+    color: #115692;
+    transform: translateY();
+}
+.btn.btn2{
+    display: inline-block;
+    background: #115692;
+    margin:5px ;
+    border-radius: 6px;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+nav .fas{
+    display: none;
+}
